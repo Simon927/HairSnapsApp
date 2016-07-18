@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TabBar" customModule="HairSnaps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZi-cZ-1X1" userLabel="Globe">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="49"/>
+                    <state key="normal" image="tabbar_globe">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_globe_selected"/>
+                    <connections>
+                        <action selector="onBtnGlobe:" destination="iN0-l3-epB" eventType="touchUpInside" id="w3C-Km-Tnb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbU-QJ-9JJ" userLabel="Community">
+                    <rect key="frame" x="64" y="0.0" width="64" height="49"/>
+                    <state key="normal" image="tabbar_community">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_community_selected"/>
+                    <connections>
+                        <action selector="onBtnCommunity:" destination="iN0-l3-epB" eventType="touchUpInside" id="uqt-zO-fIw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-ZN-Fqh" userLabel="Camera">
+                    <rect key="frame" x="128" y="0.0" width="64" height="49"/>
+                    <state key="normal" image="tabbar_camera">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_camera_selected"/>
+                    <connections>
+                        <action selector="onBtnCamera:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vcq-FU-AVc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3A-1A-Uhu" userLabel="Notification">
+                    <rect key="frame" x="192" y="0.0" width="64" height="49"/>
+                    <state key="normal" image="tabbar_notification">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_notification_selected"/>
+                    <connections>
+                        <action selector="onBtnNotification:" destination="iN0-l3-epB" eventType="touchUpInside" id="LDF-5b-eeN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq8-VM-cG1" userLabel="Profile">
+                    <rect key="frame" x="256" y="0.0" width="64" height="49"/>
+                    <state key="normal" image="tabbar_profile">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="tabbar_profile_selected"/>
+                    <connections>
+                        <action selector="onBtnProfile:" destination="iN0-l3-epB" eventType="touchUpInside" id="8ZX-PD-3zK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Kq8-VM-cG1" firstAttribute="leading" secondItem="H3A-1A-Uhu" secondAttribute="trailing" id="1vm-ww-IxT"/>
+                <constraint firstAttribute="bottom" secondItem="H3A-1A-Uhu" secondAttribute="bottom" id="2q1-w1-dwM"/>
+                <constraint firstItem="jZi-cZ-1X1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CQe-sd-Vbn"/>
+                <constraint firstItem="jZi-cZ-1X1" firstAttribute="width" secondItem="Kq8-VM-cG1" secondAttribute="width" id="CU4-jw-ajv"/>
+                <constraint firstAttribute="bottom" secondItem="jZi-cZ-1X1" secondAttribute="bottom" id="FHg-qG-7y2"/>
+                <constraint firstItem="DGs-ZN-Fqh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HGz-Cq-sbB"/>
+                <constraint firstItem="H3A-1A-Uhu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Obq-xC-Syf"/>
+                <constraint firstAttribute="trailing" secondItem="Kq8-VM-cG1" secondAttribute="trailing" id="edZ-wQ-dgU"/>
+                <constraint firstItem="DGs-ZN-Fqh" firstAttribute="leading" secondItem="lbU-QJ-9JJ" secondAttribute="trailing" id="gx7-1t-RcL"/>
+                <constraint firstItem="H3A-1A-Uhu" firstAttribute="leading" secondItem="DGs-ZN-Fqh" secondAttribute="trailing" id="iog-fZ-2g4"/>
+                <constraint firstAttribute="bottom" secondItem="Kq8-VM-cG1" secondAttribute="bottom" id="kGH-BF-6u3"/>
+                <constraint firstItem="lbU-QJ-9JJ" firstAttribute="leading" secondItem="jZi-cZ-1X1" secondAttribute="trailing" id="o0S-vZ-Iyr"/>
+                <constraint firstItem="jZi-cZ-1X1" firstAttribute="width" secondItem="DGs-ZN-Fqh" secondAttribute="width" id="pEC-F3-knQ"/>
+                <constraint firstItem="jZi-cZ-1X1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="plO-rw-L6A"/>
+                <constraint firstAttribute="bottom" secondItem="DGs-ZN-Fqh" secondAttribute="bottom" id="s3W-Va-f4z"/>
+                <constraint firstItem="jZi-cZ-1X1" firstAttribute="width" secondItem="lbU-QJ-9JJ" secondAttribute="width" id="utf-fQ-G9c"/>
+                <constraint firstItem="lbU-QJ-9JJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vOb-7L-sRK"/>
+                <constraint firstItem="Kq8-VM-cG1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="w5L-gr-37k"/>
+                <constraint firstAttribute="bottom" secondItem="lbU-QJ-9JJ" secondAttribute="bottom" id="xfg-IG-1s9"/>
+                <constraint firstItem="jZi-cZ-1X1" firstAttribute="width" secondItem="H3A-1A-Uhu" secondAttribute="width" id="zKg-R9-YMv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="communityButton" destination="lbU-QJ-9JJ" id="bdP-uX-Nl8"/>
+                <outlet property="globeButton" destination="jZi-cZ-1X1" id="yTI-iD-6eX"/>
+                <outlet property="notificationButton" destination="H3A-1A-Uhu" id="nRT-QZ-tBC"/>
+                <outlet property="profileButton" destination="Kq8-VM-cG1" id="iJG-fU-hHv"/>
+            </connections>
+            <point key="canvasLocation" x="471" y="453.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_camera" width="24" height="25"/>
+        <image name="tabbar_camera_selected" width="24" height="25"/>
+        <image name="tabbar_community" width="35" height="25"/>
+        <image name="tabbar_community_selected" width="35" height="25"/>
+        <image name="tabbar_globe" width="24" height="25"/>
+        <image name="tabbar_globe_selected" width="24" height="25"/>
+        <image name="tabbar_notification" width="28" height="24"/>
+        <image name="tabbar_notification_selected" width="28" height="24"/>
+        <image name="tabbar_profile" width="21" height="25"/>
+        <image name="tabbar_profile_selected" width="21" height="25"/>
+    </resources>
+</document>

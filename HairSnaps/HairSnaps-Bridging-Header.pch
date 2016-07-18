@@ -1,0 +1,47 @@
+//
+//  HairSnaps-Bridging-Header.h
+//  HairSnaps
+//
+//  Created by Xin YingTai on 21/11/14.
+//  Copyright (c) 2014 Xin YingTai. All rights reserved.
+//
+// --- Headers ---;
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <FacebookSDK/FacebookSDK.h>
+
+#import <GoogleOpenSource/GoogleOpenSource.h>
+#import <GooglePlus/GooglePlus.h>
+
+#import "AFNetworking.h"
+
+#import "AZNotification.h"
+
+#import "CHTCollectionViewWaterfallLayout.h"
+
+#import "JRSwizzle.h"
+
+#import "MBProgressHUD.h"
+
+#import "RMSTokenView.h"
+#import "RMSTextField.h"
+#import "RMSTokenConstraintManager.h"
+
+#import "NSDictionary+Accessors.h"
+
+#import "SDWebImageManager.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+
+#import "STTwitter.h"
+
+#import "SWTableViewCell.h"
+
+#import "TTTAttributedLabel.h"
+
+#import "ViewUtils.h"
+
+#import "YIFullScreenScroll.h"
+
+#import "UIViewController+YIFullScreenScroll.h"
